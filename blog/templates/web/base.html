@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>首页_Deathfeeling个人博客 - 一个站在web前端设计之路的技术员个人博客网站</title>
+    <meta name="keywords" content="个人博客,Deathfeeling个人博客,个人博客模板,Deathfeeling" />
+    <meta name="description" content="Deathfeeling个人博客，是一个站在web前端设计之路的程序员个人网站，提供个人博客模板免费资源下载的个人原创网站。" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% block css %}
+    {% endblock %}
+
+    {% block js %}
+    {% endblock %}
+
+
+</head>
+<body>
+    <header class="header-navigation" id="header">
+      <nav><div class="logo"><a href="">Deathfeeling's Blog</a></div>
+        <h2 id="mnavh"><span class="navicon"></span></h2>
+        <ul id="starlist">
+          <li><a href="{% url 'myblog:index' %}">网站首页</a></li>
+          <li><a href="{% url 'myblog:list' %}">我的文章</a></li>
+          <li><a href="{% url 'myblog:column' %}">栏目页</a></li>
+          <li><a href="{% url 'myblog:info' %}">内容页</a></li>
+          <li><a href="{% url 'myblog:infopic' %}">欣赏</a></li>
+          <li><a href="{% url 'myblog:gbook' %}">留言</a></li>
+          <li><a href="{% url 'myblog:about' %}">关于我</a></li>
+        </ul>
+    </nav>
+    </header>
+
+<article>
+
+
+    {% block aside %}
+    {% endblock %}
+
+
+
+    {% block main %}
+    {% endblock %}
+
+
+</article>
+
+<footer>
+  <p>Design by <a href="http://120.78.83.46" target="_blank">Deathfeeling个人博客</a> <a href="">蜀ICP备11002373号-1</a></p>
+</footer>
+<a href="#" class="cd-top">Top</a>
+
+{% block sc %}
+{% endblock %}
+
+</body>
+</html>
